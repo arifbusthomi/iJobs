@@ -19,12 +19,15 @@ namespace iJobs
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js"));
+            bundles.Add(new ScriptBundle("~/bundles/js").Include(
+                      "~/assets/semantic/dist/semantic.min.js",
+                      "~/assets/js/owl.carousel.js",
+                      "~/assets/js/main.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/assets/css/main.css",
+                      "~/assets/css/owl.carousel.css",
+                      "~/assets/semantic/dist/semantic.min.css"));
         }
     }
 }
