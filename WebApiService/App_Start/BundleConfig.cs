@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace iJobs
+namespace WebApiService
 {
     public class BundleConfig
     {
@@ -9,7 +9,7 @@ namespace iJobs
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/assets/js/jquery.min.js"));
+                        "~/Scripts/jquery-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -19,16 +19,12 @@ namespace iJobs
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new ScriptBundle("~/bundles/js").Include(
-                      "~/assets/semantic/dist/semantic.min.js",
-                      "~/assets/js/owl.carousel.js",
-                      "~/assets/js/main.js"));
+            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+                      "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/assets/css/main.css",
-                      "~/assets/css/owl.carousel.css",
-                      "~/assets/semantic/dist/semantic.min.css",
-                      "~/assets/semantic/dist/components/container.css"));
+                      "~/Content/bootstrap.css",
+                      "~/Content/site.css"));
         }
     }
 }

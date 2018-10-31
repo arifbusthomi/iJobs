@@ -3,7 +3,6 @@
 /* Header Area */
 .ui.fixed.top.menu {
   top: 5px;
-  justify-content: center;
   border: none;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -93,7 +92,7 @@
   z-index: 101;
   height: 20px;
   width: 100%;
-  background-color: #36d278;
+  background-color: teal;
 }
 .container.slider {
   max-height: 500px;
